@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main()
+{
+	int n,i=1;
+	int sum=0;
+	printf("Enter max value of series = ");
+	scanf("%d",&n);
+	sum = (n * (n + 1) * (2 * n + 1 )) / 6;
+	printf("Sum of the series = ");
+	loop:
+	    i<=n;
+	    i++;
+		if (i != n)
+		{
+		   printf("%d^2 + ",i);
+		   goto loop;
+		}
+		else
+		{
+		   printf("%d^2 = %d ",i,sum);
+		}
+}
