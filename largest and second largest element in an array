@@ -1,0 +1,25 @@
+#include <stdio.h>
+void main()
+{
+    int size,i,arr[i];
+    int large=0, secondLarge=0;
+    printf("Enter the number of elements in array: ");
+    scanf("%d",&size);
+    for(i=0; i<size; i++)
+    {
+    printf("Enter the array element ");
+    printf("%d :",(i+1));
+    scanf("%d",&arr[i]);
+    if(large<arr[i])
+    {
+    secondLarge=large;
+    large=arr[i];
+    }
+    else if(secondLarge<arr[i])
+    {
+    secondLarge=arr[i];
+    }
+}
+printf("\n%d is the largest nunber\n",large);
+printf("%d is te second largest nunber",secondLarge);
+}
