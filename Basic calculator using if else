@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+    int a,b,c,ch;
+    printf("\n MENU \n");
+    printf("\n ENTER CHOICE\n 1. ADDITION \n 2. SUBTRACTION \n 3. MULTIPLICATION \n 4. DIVISION \n 5. POWER CALCULATION \n 6. EXIT \n");
+    scanf("%d",&ch);
+    if(ch==1)
+        {
+            printf("enter two number for calculation= ");
+            scanf("%d%d",&a,&b);
+            c=a+b;
+            printf("Sum=%d",c);
+        }
+        else if(ch==2)
+        {
+            printf("enter two number for calculation= ");
+            scanf("%d%d",&a,&b);
+            c=a-b;
+            printf("Difference=%d",c);
+        }
+        else if(ch==3)
+        {
+            printf("enter two number for calculation= ");
+            scanf("%d%d",&a,&b);
+            c=a*b;
+            printf("Product=%d",c);
+        }
+        else if(ch==4)
+        {
+            printf("enter two number for calculation= ");
+            scanf("%d%d",&a,&b);
+            c=a/b;
+            printf("Division=%d",c);
+        }
+        else if(ch==5)
+        {
+            printf("enter number and power for calculation= ");
+            scanf("%d%d",&a,&b);
+            c=pow(a,b);
+            printf("Power Calculation=%d",c);
+        }
+        else if(ch==6)
+        {
+        printf("Exit");
+        }
+        else
+        {
+            printf("Invalid Choice");
+        }
+}
