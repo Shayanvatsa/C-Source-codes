@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main()
+{
+    int n,i;
+    float ar[100],sum=0,avg=0;
+    printf("Enter elements of array= ");
+    scanf("%d",&n);
+    for(i=0;i<=n-1;i++)
+    {
+        printf("Enter value of array %d= ",i+1);
+        scanf("%f",&ar[i]);
+        sum+=ar[i];
+    }
+    avg=sum/n;
+    printf("Sum=%f",sum);
+    printf("\nAverage=%f",avg);
+}
