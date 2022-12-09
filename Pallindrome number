@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main()
+{
+    int n,rev=0,rem,or;
+    printf("enter any number= ");
+    scanf("%d",&n);
+    or=n;
+    while(n!=0)
+    {
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    if(or==rev)
+    {
+        printf("It is a pallindrome number");
+    }
+    else
+    {
+        printf("it is not a pallindrome number");
+    }
+}
