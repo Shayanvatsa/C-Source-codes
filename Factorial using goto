@@ -1,0 +1,15 @@
+#include <stdio.h>
+void main()
+{
+    int i,n=1;
+    printf("Enter the number= ");
+    scanf("%d",&i);
+    start:
+    n=n*i;
+    i--;
+    if(i>0)
+    {
+        goto start;
+    }
+        printf("Factorial=%d",n);
+}
