@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main()
+{
+    int a=100;
+    int *ptr;
+    ptr=&a;
+    int **ptr1;
+    ptr1=&ptr;
+    printf("Value using a=%d",a);
+    printf("\nValue using ptr=%d",(*ptr));
+    printf("\nValue using ptr1=%d", (**ptr1));
+}
