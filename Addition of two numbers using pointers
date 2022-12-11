@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main()
+{
+    int a,b,c;
+    int *ptra, *ptrb;
+    printf("Enter two numers= ");
+    scanf("%d%d",&a,&b);
+    ptra=&a;
+    ptrb=&b;
+    c=(*ptra)+(*ptrb);
+    printf("Sum=%d",c);
+}
