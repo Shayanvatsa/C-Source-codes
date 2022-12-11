@@ -1,0 +1,52 @@
+#include <stdio.h>
+int sum1(int,int);
+void sum2(void);
+void sum3(int,int);
+int sum4(void);
+int main()
+{
+    int a,b,c;
+    printf("Enter two numbers=");
+    scanf("%d%d",&a,&b);
+    c=sum1(a,b);
+    printf("Sum=%d\n",c);
+    void sum3(int,int);
+    {
+        int a,b;
+        printf("Enter two numbers=");
+        scanf("%d%d",&a,&b);
+        sum3(a,b);
+    }
+    sum2();
+    int sum4(void);
+    {
+        int c;
+        c=sum4();
+        printf("Sum=%d\n",c);
+    }
+}
+    int sum1(int x,int y)
+    {
+        return(x+y);
+    }
+    void sum2(void)
+    {
+        int a,b,c;
+        printf("Enter two numbers=");
+        scanf("%d%d",&a,&b);
+        c=a+b;
+        printf("Sum=%d\n",c);
+    }
+    void sum3(int x,int y)
+    {
+        int c;
+        c=x+y;
+        printf("Sum=%d\n",c);
+    }
+    int sum4(void)
+    {
+        int a,b;
+        printf("Enter two numbers=");
+        scanf("%d%d",&a,&b);
+        return(a+b);
+    }
