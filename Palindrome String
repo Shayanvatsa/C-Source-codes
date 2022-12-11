@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char st[50];
+    int i, len, temp=0,flag = 0;
+    printf("Enter a string= ");
+    scanf("%s", st);
+    len = strlen(st);
+    for(i=0;i < len ;i++)
+    {
+        if(st[i] != st[len-i-1])
+        {
+            temp = 1;
+            break;
+        }
+    }
+    if (temp==0)
+    {
+        printf("it is a palindrome string");
+    }    
+    else
+    {
+        printf("it is not a palindrome string");
+    }
+} 
