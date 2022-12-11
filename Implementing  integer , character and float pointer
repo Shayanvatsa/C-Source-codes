@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()                                                                     
+{                                                                               
+    char ch, *chptr;                                                              
+    int i, *iptr;                                                                 
+    float f, *fptr;                                                              
+    printf("Enter character= ");                                                
+    scanf("%c", &ch);                                                           
+    printf("\nEnter integer= ");                                                
+    scanf("%d", &i);                                                            
+    printf("\nEnter float= ");                                                  
+    scanf("%f", &f);                                                           
+    chptr = &ch;                                                                  
+    iptr = &i;                                                                    
+    fptr = &f;                                                                   
+    printf("\nAddress contained in chptr= %u", chptr);                              
+    printf("\nAddress contained in iptr= %u", iptr);                                
+    printf("\nAddress contained in fptr= %u", fptr);                                
+    printf("\nValue of ch pointed by chptr= %c", *chptr);                        
+    printf("\nValue of i pointed by iptr= %d", *iptr);                           
+    printf("\nValue of f pointed by fptr= %f", *fptr);                          
+}     
