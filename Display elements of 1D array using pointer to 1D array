@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main()
+{
+    int ar[50],i,n;
+    printf("Enter max limit= ");
+    scanf("%d",&n);
+    printf("Enter elements to display= ");
+    for(i=0;i<n;i++)
+    scanf("%d",ar+i);
+    printf("Entered elements=\n");
+    for(i=0;i<n;i++)
+    printf("%d\n", *(ar+i));
+}
