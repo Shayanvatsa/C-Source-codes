@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+	int n,i,pos,*a,num;
+	printf("Enter number of elements in array=");
+	scanf("%d",&n);
+	a=calloc(sizeof(int),n);
+	printf("Enter %d Elements:-\n",n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",a+i);
+	}
+	printf("Enter any element to find=");
+	scanf("%d",&num);
+	for(i=0;i<n;i++)
+	{
+		if(*(a+i)==num)
+		{
+			pos=i;
+            printf("%d is element no. %d",num,pos+1);
+            break;
+		}
+	}
+	    if(*(a+i)!=num)
+        {
+		    printf("%d is not present in array",num);
+        }
+}
