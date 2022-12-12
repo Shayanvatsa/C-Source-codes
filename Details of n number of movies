@@ -1,0 +1,34 @@
+#include <stdio.h>   
+struct movie 
+{ 
+    char name[50]; 
+    char prname[50];
+    double budget; 
+    float duration; 
+} 
+    movie1[100]; 
+    int main() 
+    { 
+        int i,n;
+        printf("Enter max limit= ");
+        scanf("%d",&n);
+        for(i=0;i<n;i++)
+        {
+        printf("Enter name of movie= ");
+        scanf("%s",&movie1[i].name);
+        printf("Enter producer name= ");
+        scanf("%s",&movie1[i].prname);
+        printf("Enter budget of movie= ");
+        scanf("%lf",&movie1[i].budget);
+        printf("Enter duration of movie= ");
+        scanf("%f",&movie1[i].duration);
+        }
+        for(i=0;i<n;i++)
+        {
+        printf("\nName= %s",movie1[i].name); 
+        printf("\nProducer name= %s",movie1[i].prname); 
+        printf("\nBudget=%lf", movie1[i].budget); 
+        printf("\nDuration=%f",movie1[i].duration);
+        }
+        return 0;
+    }
