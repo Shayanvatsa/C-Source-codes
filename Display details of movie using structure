@@ -1,0 +1,26 @@
+#include <stdio.h>   
+#include <string.h> 
+struct movie 
+{ 
+    char name[50]; 
+    char prname[50];
+    double budget; 
+    float duration; 
+} 
+    movie1; 
+    int main() 
+    { 
+        printf("Enter name of movie= ");
+        scanf("%s",&movie1.name);
+        printf("Enter producer name= ");
+        scanf("%s",&movie1.prname);
+        printf("Enter budget of movie= ");
+        scanf("%lf",&movie1.budget);
+        printf("Enter duration of movie= ");
+        scanf("%f",&movie1.duration);
+        printf("\nName= %s",movie1.name); 
+        printf("\nProducer name= %s",movie1.prname); 
+        printf("\nBudget=%lf", movie1.budget); 
+        printf("\nDuration=%f",movie1.duration);
+        return 0;
+    }
